@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+<div class="div">
+    <div id="insert" >
+        <div>
+        <label>تعداد بازیکنان :</label>
+            <select type="number" id="countPlayers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div class="auto">
+        <label>تعداد مارها :</label>
+            <select type="number" id="countSnakes">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+        </div>
+        <div class="auto">
+        <label>تعداد نردبان ها :</label>
+            <select type="number" id="countStairs">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+        </div>
+        <div>
+            <button id="start">شروع بازی</button>
+            <button id="customStart">شروع بازی با تنظیمات</button>
+        </div>
+    </div>
+    <div id="play">
+    </div>
+</div>
+<div class="div">
+    <div>
+        <h1>Dice :</h1>
+        <h2 id="dice"></h2>
+    </div>
+</div>
+<div class="div">
+    <div>
+        <table>
+        <tr>
+            <td id="num100">100</td>
+            <td id="num99">99</td>
+            <td id="num98">98</td>
+            <td id="num97">97</td>
+            <td id="num96">96</td>
+            <td id="num95">95</td>
+            <td id="num94">94</td>
+            <td id="num93">93</td>
+            <td id="num92">92</td>
+            <td id="num91">91</td>
+        </tr>
+        <tr>
+            <td id="num81">81</td>
+            <td id="num82">82</td>
+            <td id="num83">83</td>
+            <td id="num84">84</td>
+            <td id="num85">85</td>
+            <td id="num86">86</td>
+            <td id="num87">87</td>
+            <td id="num88">88</td>
+            <td id="num89">89</td>
+            <td id="num90">90</td>
+        </tr>
+        <tr>
+            <td id="num80">80</td>
+            <td id="num79">79</td>
+            <td id="num78">78</td>
+            <td id="num77">77</td>
+            <td id="num76">76</td>
+            <td id="num75">75</td>
+            <td id="num74">74</td>
+            <td id="num73">73</td>
+            <td id="num72">72</td>
+            <td id="num71">71</td>
+        </tr>
+        <tr>
+            <td id="num61">61</td>
+            <td id="num62">62</td>
+            <td id="num63">63</td>
+            <td id="num64">64</td>
+            <td id="num65">65</td>
+            <td id="num66">66</td>
+            <td id="num67">67</td>
+            <td id="num68">68</td>
+            <td id="num69">69</td>
+            <td id="num70">70</td>
+        </tr>
+        <tr>
+            <td id="num60">60</td>
+            <td id="num59">59</td>
+            <td id="num58">58</td>
+            <td id="num57">57</td>
+            <td id="num56">56</td>
+            <td id="num55">55</td>
+            <td id="num54">54</td>
+            <td id="num53">53</td>
+            <td id="num52">52</td>
+            <td id="num51">51</td>
+        </tr>
+        <tr>
+            <td id="num41">41</td>
+            <td id="num42">42</td>
+            <td id="num43">43</td>
+            <td id="num44">44</td>
+            <td id="num45">45</td>
+            <td id="num46">46</td>
+            <td id="num47">47</td>
+            <td id="num48">48</td>
+            <td id="num49">49</td>
+            <td id="num50">50</td>
+        </tr>
+        <tr>
+            <td id="num40">40</td>
+            <td id="num39">39</td>
+            <td id="num38">38</td>
+            <td id="num37">37</td>
+            <td id="num36">36</td>
+            <td id="num35">35</td>
+            <td id="num34">34</td>
+            <td id="num33">33</td>
+            <td id="num32">32</td>
+            <td id="num31">31</td>
+        </tr>
+        <tr>
+            <td id="num21">21</td>
+            <td id="num22">22</td>
+            <td id="num23">23</td>
+            <td id="num24">24</td>
+            <td id="num25">25</td>
+            <td id="num26">26</td>
+            <td id="num27">27</td>
+            <td id="num28">28</td>
+            <td id="num29">29</td>
+            <td id="num30">30</td>
+        </tr>
+        <tr>
+            <td id="num20">20</td>
+            <td id="num19">19</td>
+            <td id="num18">18</td>
+            <td id="num17">17</td>
+            <td id="num16">16</td>
+            <td id="num15">15</td>
+            <td id="num14">14</td>
+            <td id="num13">13</td>
+            <td id="num12">12</td>
+            <td id="num11">21</td>
+        </tr>
+        <tr>
+            <td id="num1">1  </td>
+            <td id="num2">2  </td>
+            <td id="num3">3  </td>
+            <td id="num4">4  </td>
+            <td id="num5">5  </td>
+            <td id="num6">6  </td>
+            <td id="num7">7  </td>
+            <td id="num8">8  </td>
+            <td id="num9">9  </td>
+            <td id="num10">10</td>
+        </tr>
+
+    </table>
+    </div>
+
+</div>
+<script src="jquery.js"></script>
+<script src="javascript.js"></script>
+</body>
+</html>

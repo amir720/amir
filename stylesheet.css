@@ -1,0 +1,88 @@
+*{
+    font-family: Tahoma;
+}
+body{
+    background-color: whitesmoke;
+}
+td{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: solid 3px black;
+    padding: 7px;
+    border-radius: 4px;
+    box-shadow: 5px ;
+
+}
+.div{
+    display: inline-flex;
+    /*width: 600px;*/
+    padding: 30px;
+}
+#insert label{
+    width: 100px;
+    display: block;
+}
+img{
+    width: 70px;
+    height: 60px;
+    color: red;
+    border-radius:50% ;
+    padding: 5px;
+}
+.dodgerblue{
+    border: solid 10px dodgerblue;
+    padding: 0px;
+    transition: .8s;
+}
+.blueviolet{
+    border: solid 10px blueviolet;
+    padding: 0px;
+    transition: .8s;
+
+}
+.brown{
+    border: solid 10px brown;
+    padding: 0px;
+    transition: .8s;
+
+}
+.fuchsia{
+    border: solid 5px fuchsia;
+    padding: 0px;
+    transition: .8s;
+
+}
+.default{
+    border: solid 3px black;
+}
+select,option{
+    text-align: center;
+    padding: 5px  20px;
+    margin: 5px 0;
+}
+#start{
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+#play{
+    /*border: solid 3px black;*/
+}
+#play div{
+    padding: 10px;
+}
+#alert{
+    text-align: center;
+    border: red solid 2px;
+    border-radius: 5px;
+    background-color: palevioletred;
+    color: #b92c28;
+    width: 50%;
+    margin: auto;
+    padding: 2px;
+}
+#alert button{
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
